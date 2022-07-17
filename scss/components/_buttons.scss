@@ -1,0 +1,33 @@
+@use '../abstracts/' as a;
+
+// Buttons
+
+.button {
+    width:22.8rem;
+    height: 5.6rem;
+    border:none;
+    color:a.$color-white;
+    border-radius: 2.8rem;
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media(max-width:460px) {
+        width:17.6rem;
+        height: 4.4rem;
+    }
+
+    &-dark {
+        background-color: a.$color-black;
+        &:hover {
+            background-color: a.$color-blue;
+        }
+    }
+
+    &-light {
+        background-color: a.$color-orange;
+        &:hover {
+            background-color: a.$color-yellow;
+        }
+    }
+}

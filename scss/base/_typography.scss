@@ -1,0 +1,83 @@
+@use '../abstracts/' as a;
+
+// HEADERS
+
+h1 {
+    font-size: 5.6rem;
+    line-height: 7rem;
+
+    @media(max-width:770px) {
+        font-size: 4.4rem;
+        line-height: 5.5rem;
+    }
+
+    @media(max-width:460px) {
+        margin-bottom: 1.6rem;
+        font-size: 3.6rem;
+        line-height: 4.536rem;
+        text-align: center;
+    }
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 5.1rem;
+
+    @media(max-width:770px) {
+        width:33.9rem;
+        height: 12rem;
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+    @media(max-width:770px) {
+        width:34.3rem;
+        height: 11.1rem;
+        font-size: 2.6rem;
+        line-height: 3.276rem;
+    }
+}
+
+h3 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+// PARAGRAPHS
+
+p {
+    margin-inline: auto;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    color: a.$color-gray;
+    text-align: center;
+
+    @media(max-width:770px) {
+        width:57.3rem;
+    }
+
+    @media(max-width:640px) {
+        width: 28.5rem;
+        height: 10.4rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+
+// BUTTONS
+
+button {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+
+    @media(max-width:460px) {
+        font-size: 1.4rem;
+    }
+}
+

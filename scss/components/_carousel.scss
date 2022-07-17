@@ -1,0 +1,13 @@
+@use '../abstracts/' as a;
+
+.arrow {
+    width:6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    background-color: a.$color-black;
+    color:a.$color-white;
+    &:hover {
+        background-color: a.$color-blue;
+        cursor: pointer;
+    }
+}
